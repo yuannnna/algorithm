@@ -4,12 +4,14 @@
 using namespace std;
 
 bool solution(bool x1, bool x2, bool x3, bool x4) {
-    bool result = false;
+//     bool result = false;
     
-    if((x1 && x2) ||(x1 && !x2) || (!x1 && x2) ) {
+//     if((x1 && x2) ||(x1 && !x2) || (!x1 && x2) ) {
         
-        if( (x3 && x4) || (x3 && !x4) || (!x3 && x4) ) result = true;
-        else result = false;
-    }
-    return result;
+//         if( (x3 && x4) || (x3 && !x4) || (!x3 && x4) ) result = true;
+//         else result = false;
+//     }
+//     return result;
+    
+    return (x1 || x2) && (x3 || x4);
 }
