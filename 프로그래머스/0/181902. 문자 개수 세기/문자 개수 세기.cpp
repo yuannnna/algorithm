@@ -1,0 +1,15 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+vector<int> solution(string my_string) {
+    vector<int> result (52, 0);
+    
+    for(int i=0; i<my_string.size(); i++) {
+        
+        if(my_string[i] >= 'A' && my_string[i] <= 'Z') result[my_string[i] - 'A']++;
+        else result[my_string[i] - 'a' + 26]++;
+    }
+    return result;
+}
