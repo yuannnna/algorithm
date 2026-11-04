@@ -7,7 +7,7 @@ int solution(vector<vector<int>> board, int k) {
     int result = 0;
     
     for(int i = 0; i<board.size(); i++) 
-        for(int j = 0; j<board[0].size(); j++)
+        for(int j = 0; j<board[i].size(); j++)
             if(i + j <= k) result += board[i][j];
             
     return result;
