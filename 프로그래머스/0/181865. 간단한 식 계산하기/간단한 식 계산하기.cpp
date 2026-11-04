@@ -6,16 +6,23 @@ using namespace std;
 
 int solution(string binomial) {
     
-    stringstream ss(binomial);
+//     stringstream ss(binomial);
     
-    string word;
-    vector<string> result;
-    while(ss >> word) {
-        result.push_back(word);
-    }
+//     string word;
+//     vector<string> result;
+//     while(ss >> word) {
+//         result.push_back(word);
+//     }
+    int a, b;
+    char op;
     
-    if(result[1] == "+") return stoi(result[0]) + stoi(result[2]);
-    else if(result[1] == "-") return stoi(result[0]) - stoi(result[2]);
-    else return stoi(result[0]) * stoi(result[2]);
+    stringstream ss;
+    ss.str(binomial);
+    
+    ss >> a >> op >> b;
+    
+    if(op == '+') return a + b;
+    else if(op == '-') return a - b;
+    else return a * b;
     
 }
