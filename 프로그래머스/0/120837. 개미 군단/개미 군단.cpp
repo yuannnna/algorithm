@@ -13,6 +13,7 @@ int solution(int hp) {
     result += hp / 3;
     hp = hp % 3;
     
-    if(hp < 3) for(int i=0; i<hp; i++) result++;
+    result += hp;
+    
     return result;
 }
