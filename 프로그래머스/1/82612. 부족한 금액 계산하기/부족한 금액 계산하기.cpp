@@ -9,8 +9,5 @@ long long solution(int price, int money, int count)
     long long sum = 0;
     for(int i=1; i<=count; i++) sum += price * i;
     
-    if(money >= sum) answer = 0;
-    else answer = abs(money - sum);
-
-    return answer;
+    return money >= sum ? 0 : abs(money - sum);
 }
