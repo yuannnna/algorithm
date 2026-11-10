@@ -13,7 +13,7 @@ string solution(vector<int> numbers) {
         s.push_back(to_string(n));
     }
     
-    sort(s.begin(), s.end(), [](string&a , string&b){
+    sort(s.begin(), s.end(), [](const string&a , const string&b){
         
         return a + b > b + a;
     });
