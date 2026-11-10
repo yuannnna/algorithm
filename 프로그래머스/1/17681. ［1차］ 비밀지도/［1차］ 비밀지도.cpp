@@ -11,7 +11,7 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2) {
     
     for(int i=0; i<arr1.size(); i++) {
         
-        string r1 = "", r2 ="";
+        string r1 = "";
         int count = n;
         while(count != 0) {
             
@@ -26,7 +26,6 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2) {
             count--;
         }
         reverse(r1.begin(), r1.end());
-        cout << r1 << endl;
         answer.emplace_back(r1);
     }
 
