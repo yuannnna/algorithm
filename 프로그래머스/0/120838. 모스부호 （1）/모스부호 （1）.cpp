@@ -21,9 +21,11 @@ string solution(string letter) {
             
             auto num = find(mos.begin(), mos.end(), tmp);
             
-            char c = distance(mos.begin(), num) + 'a';
-            
-            result += c;
+            if(num != mos.end()) {
+                
+                char c = distance(mos.begin(), num) + 'a';
+                result += c;
+            }
             
             tmp = "";
             continue;
