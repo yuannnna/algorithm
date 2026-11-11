@@ -13,6 +13,8 @@ string solution(string letter) {
     
     
     string tmp = "";
+    letter += " ";
+    
     for(int i=0; i<letter.size(); i++) {
         
         if(letter[i] == ' ') {
@@ -28,14 +30,6 @@ string solution(string letter) {
         }
         
         tmp += letter[i];
-    }
-    
-    if(!tmp.empty()) {
-        auto nu = find(mos.begin(), mos.end(), tmp);
-        
-        char d = distance(mos.begin(), nu) + 'a';
-        result += d;
-
     }
     
     
