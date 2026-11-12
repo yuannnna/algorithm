@@ -19,7 +19,6 @@ int solution(string dartResult) {
     for(int i=0; i<dartResult.size(); i++) {
         
         int tmp = 0;
-        if(idx > 3) break;
         
         if(isdigit(dartResult[i]) != 0) {
             
@@ -50,7 +49,7 @@ int solution(string dartResult) {
                 for(int j = idx -2; j <= idx -1; j++) {
                     
                     num[j] *= 2;
-                    cout << num[j] << endl;
+                    // cout << num[j] << endl;
                 }
                 // cout << "----------" << endl;
             }
