@@ -36,12 +36,6 @@ int solution(vector<vector<int>> board) {
                     }
                     
                 }
-                
-                // if(!visited[k][q] && k >=0 && k<board.size() && q >=0 && q <board.size()) {
-                //     visited[k][q] = true;
-                //     cnt++;
-                // }
-                
             }
         }
     }
