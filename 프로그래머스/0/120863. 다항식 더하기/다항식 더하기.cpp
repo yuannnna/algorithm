@@ -27,14 +27,15 @@ string solution(string polynomial) {
         }
     }
     
-    
-    if(idx1 == 0 && idx2 != 0) answer = to_string(idx2);
+    if(idx1 == 1 && idx2 == 0) answer = "x";
     
     else if(idx1 == 1 && idx2 != 0) answer = "x + " + to_string(idx2);
     
-    else if(idx1 == 1 && idx2 == 0) answer = "x";
+    else if(idx1 == 0 && idx2 != 0) answer = to_string(idx2);
     
-    else if(idx2 == 0 && idx1 != 0) answer = to_string(idx1) + "x";
+    else if(idx1 != 0 && idx2 == 0 ) answer = to_string(idx1) + "x";
+    
+    else if(idx1 == 0 && idx2 == 0) answer = "";
     
     else answer = to_string(idx1) + "x" + " + " + to_string(idx2);
     
